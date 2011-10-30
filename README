@@ -1,0 +1,24 @@
+CandySpider game (whack-a-spider)
+
+This is a project made for the trick or treat event in our office. This is a game based on the whack-a-something arcade stations at the mall. The entire solution is made in .Net and only involves simple electronics. Visit wendellinfinity.wordpress.com for the write-up.
+
+The code is heavily commented
+
+[CandySpider]
+WPF program for the game interface. Counts the spiders hit by watching the serial port used by XBEE. It can also use any serial device as long as it sends "[hit]" string to signal the interface for a spider hit.
+
+Highlights:
+- simple animation using Image and png sprites
+- Threading and DispatchTimers
+- Serial port
+
+[CandySpiderController]
+Netduino program that sends serial output to the host. Simple circuitry but the code involves some nice techniques.
+
+Highlights:
+- Multithreading
+- InterruptPort
+- use of input and output port for boolean logic
+- and more multithreading!
+
+Hope you enjoy and create your own whack-a-something game!

@@ -1,0 +1,16 @@
+﻿<Window x:Class="CandySpider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="770" Width="1100">
+    <Grid Background="#FFCB2C2C">
+        <Canvas Height="471" HorizontalAlignment="Left" Margin="-19,0,0,0" Name="drawArea" VerticalAlignment="Top" Width="585" Background="#FFCB2C2C">
+        </Canvas>
+        <Button Content="Rawr" Height="85" HorizontalAlignment="Left" Margin="218,480,0,0" Name="rawr" VerticalAlignment="Top" Width="198" FontSize="50" Click="rawr_Click" />
+        <Label HorizontalContentAlignment="Right"  Content="00" Height="288" HorizontalAlignment="Left" Margin="622,135,0,0" Name="hitCount" VerticalAlignment="Top" Width="408" FontSize="300" Foreground="#FFFFEB00" FontFamily="OCR A" />
+        <Label Content="Spiders caught:" Height="84" HorizontalAlignment="Left" Margin="609,88,0,0" Name="label2" VerticalAlignment="Top" Width="400" FontSize="50" Foreground="White" />
+        <Button Content="Reset" Height="130" HorizontalAlignment="Left" Margin="165,576,0,0" Name="reset" VerticalAlignment="Top" Width="303" FontSize="100" BorderBrush="Black" Foreground="#FFC22011" Click="reset_Click" />
+        <Button Content="Start" Height="130" HorizontalAlignment="Left" Margin="668,576,0,0" Name="start" VerticalAlignment="Top" Width="303" FontSize="100" BorderBrush="Black" Foreground="#FF11C216" Click="start_Click" />
+        <Label Content="Time: 30s" Height="93" HorizontalAlignment="Left" Margin="622,455,0,0" Name="time" VerticalAlignment="Top" Width="415" Foreground="#FF5EFF45" FontSize="70" FontFamily="OCR A" />
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Time is up!" Height="228" HorizontalAlignment="Left" Margin="49,195,0,0" Name="timeIsUp" VerticalAlignment="Top" Width="601" BorderBrush="Black" Background="#FF1A1A1A" Foreground="#FFD8FF00" FontFamily="Cordia New" FontSize="180" Visibility="Hidden" />
+    </Grid>
+</Window>
